@@ -1,22 +1,21 @@
-# Requirements — Customer Search
-## User Story
-As a user,
-I want to search customers by name or email,
-so that I can quickly find the customer record I need.
-## Functional Requirements
-FR-01:
-FR-02:
-FR-03:
-FR-04:
-FR-05:
-FR-06:
-## Non-Functional Requirements
-NFR-01:
-NFR-02:
-NFR-03:
-## Open Questions
-Q-01:
-Q-02:
-## Constraints / Assumptions
-C-01:
-A-01:
+# Agent Instructions
+## Project Rules
+- Read REQUIREMENTS.md before implementing.
+- Read SPEC.md before implementing.
+- Read ARCHITECTURE.md before architectural changes.
+- Follow TASKS.md.
+- Prefer small, focused changes.
+- Do not invent business requirements.
+- Do not modify REQUIREMENTS.md or SPEC.md to make tests pass.
+- Do not delete or weaken tests.
+- Do not add dependencies without justification.
+## Validation
+- Run pytest before and after changes.
+- Add tests for new behavior.
+- Report changed files and test results.
+- Stop and ask for clarification if requirements conflict.
+## Definition of Done
+- Relevant tests pass.
+- Acceptance criteria are covered.
+- No unrelated files are changed.
+- Documentation reflects final behavior.
