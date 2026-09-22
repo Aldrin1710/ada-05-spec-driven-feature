@@ -31,7 +31,7 @@
 - Verification: `pytest -v`
 
 ## T-06 Documentación
-- Goal: Actualizar la matriz de trazabilidad, las instrucciones de ejecución y el log de IA.
-- Files: `docs/traceability.md`, `README.md`, `AI_USAGE_LOG.md`
+- Goal: Actualizar la matriz de trazabilidad y las instrucciones de ejecución.
+- Files: `docs/traceability.md`, `README.md`
 - Acceptance: La trazabilidad conecta claramente Requisito -> AC -> Tarea -> Código -> Prueba. Se cumple la definición de "Hecho" (DoD).
 - Verification: Revisión humana de los archivos Markdown generados.
