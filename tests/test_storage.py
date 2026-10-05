@@ -65,3 +65,12 @@ def test_load_customers_missing_keys(capsys):
             load_customers(temp_path)
     finally:
         os.remove(temp_path)
+
+def test_load_customers_invalid_data_types(capsys):
+    temp_path = create_temp_json([{"id": 1, "name": None, "last_name": "B", "email": "a@b.com"}])
+    try:
+        with pytest.raises(SystemExit) as exc_info:
+            load_customers(temp_path)
+        assert exc_info.value.code == 1
+    finally:
+        os.remove(temp_path)

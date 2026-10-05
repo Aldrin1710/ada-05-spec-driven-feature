@@ -29,6 +29,15 @@ def load_customers(file_path: str) -> list[Customer]:
                 print("Error: No se pudo cargar la base de datos de clientes")
                 sys.exit(1)
                 
+            # Validación de tipos de datos (evita null y tipos incorrectos)
+            if not isinstance(item['id'], int) or \
+               not isinstance(item['name'], str) or \
+               not isinstance(item['last_name'], str) or \
+               not isinstance(item['email'], str):
+                print("Error: No se pudo cargar la base de datos de clientes")
+                sys.exit(1)
+
+                
             customers.append(Customer(
                 id=item['id'],
                 name=item['name'],
